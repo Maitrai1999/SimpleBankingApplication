@@ -20,6 +20,7 @@ class Banking {
         System.out.println("Enter Amount U Want to Deposit : ");
         amt = s.nextLong();
         balance = balance + amt;
+        System.out.println("your amount is deposited your total balance is:"+balance);
     }
     void withdrawal() {
         long amt;
@@ -27,6 +28,7 @@ class Banking {
         amt = s.nextLong();
         if (balance > amt) {
             balance = balance - amt;
+            System.out.println("your balance is:"+balance);
         } else {
             System.out.println("your balance is low......Transaction Failed!!");
         }
